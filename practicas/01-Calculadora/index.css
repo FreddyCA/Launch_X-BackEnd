@@ -1,0 +1,98 @@
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora {
+    background-color: rgb(72, 10, 119);
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pantalla {
+    background-color: rgb(126, 124, 111);
+    height: 7rem;
+    width: 90%;
+    border: 1px solid black;
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 3rem;
+    padding: 0.2rem 1rem;
+}
+
+.botoncitos {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 60px);
+    justify-items: center;
+}
+
+button {
+    border: 2px solid black;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    height: 3rem;
+    width: 5rem;
+    cursor: pointer; 
+}
+
+.espacio {
+    background-color: rgb(72, 10, 119);
+    border: none;
+    cursor: default;
+}
+
+.numero {
+    background-color: #5B479C;
+    color: white;
+}
+
+.operador, .constante, .igual {
+    background-color: #E6E9F7;
+    color: #715CA2;
+}
+
+#igual {
+    margin: 0 0 0 7rem;
+    width: 10rem;
+    font-weight: bold;
+}
+
+.borrar-parcial, .borrar-todo{
+    background-color: #CBA92F;
+}
+
+.numero:hover {
+    background-color: rgb(83, 54, 89);
+}
+
+.operador:hover, .constante:hover {
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+}
+#igual:hover {
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    border: 1px solid white;
+}
+
+.borrar-parcial:hover, .borrar-todo:hover {
+    background-color: rgba(255, 255, 0, 0.516);
+}
+
